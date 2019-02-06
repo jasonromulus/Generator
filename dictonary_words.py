@@ -21,8 +21,9 @@ def random_generator():
 
 def create_sentence():
     results = ' '.join(random_generator())
-    print(results)
     return results
+
+print(create_sentence)
 
 if __name__ == '__main__':
     create_sentence()
