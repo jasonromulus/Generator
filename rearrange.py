@@ -10,7 +10,6 @@ def rearrange(list):
         chosen_word = list.pop(random_index)
         print('word:', chosen_word)
         new_list.append(chosen_word)
-        # list.remove(chosen_word)
         counter -= 1
     print('new_list:', new_list)
     results = " ".join(new_list)
