@@ -16,8 +16,8 @@ def random_generator():
 
     content = load_dictonary()
     argument_input = command_line_input()
-    argument_int = int(' '.join(argument_input))
-    return random.choices(content, argument_int)
+    arg_int = int(' '.join(argument_input))
+    return random.choices(content, b=arg_int)
 
 def create_sentence():
     results = ' '.join(random_generator())
