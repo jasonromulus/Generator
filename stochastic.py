@@ -26,3 +26,14 @@ def list_of_list(dictionary):
         empty_list.append(thing)
     return(empty_list)
 
+# This is my probability function
+def stochastic(empty_list):
+    word_frequency = 0
+    probability = 0.0
+
+    for item in empty_list:
+        word_frequency += item[1]
+    # random.uniform give a random number in the range
+    random.uniform(0, 1)
+    for value in sentence_sample:
+        probability += value[1]/word_frequency
