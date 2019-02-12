@@ -5,9 +5,9 @@ def histogram():
         print(myList)
 histogram()
 
-# def load_spies():
+# def load_script():
 #     with open('villain.txt', 'r') as f:
 #         read_data = f.read().split(" ")
-#     # f.closed
-#         print(read_data)
-# load_spies()
+#     f.closed
+# print(read_data)
+# load_script()
