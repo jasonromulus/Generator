@@ -10,7 +10,7 @@ def load_dictonary():
 
 def command_line_input():
     # This is creating the arugment for my file.
-    return sys.argument[1:]
+    return sys.argv[1:]
 
 def random_generator():
     # This is loading my dictonary.
