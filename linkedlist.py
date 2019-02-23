@@ -78,7 +78,7 @@ class LinkedList(object):
         """Insert the given item at the head of this linked list.
         TODO: Running time: O(???) Why and under what conditions?"""
         # TODO: Create new node to hold given item
-        
+        self.node = new(item)
         # TODO: Prepend node before head, if it exists
 
     def find(self, quality):
