@@ -71,11 +71,14 @@ class LinkedList(object):
         # TODO: Create new node to hold given item
         new_node = Node(item)
         # TODO: Append node after tail, if it exists
-        self.tail.next = new_node
-        #The linked list owns this tail
-        self.tail = new_node
+        if self.head is None: # check if head is None
+            self.head = new_node # this sets the new head of the node
+            self.tail = new_node # this sets the end of the tail
+        else: # otherwise
+            self.tail.next = new_node # set tail next to new_node
+            self.tail = new_node # #The linked list owns this tail
 
-        # Alan had this see how this works when you compare it to your!
+        # Alan had this see how this works when you compare it to yours!
         #  if self,is_empty():
         #     self.head = new_node
         # else:
@@ -89,9 +92,13 @@ class LinkedList(object):
         # TODO: Create new node to hold given item
         new_node = Node(item)
         # TODO: Prepend node before head, if it exists
-        self.head.next = new_node
-        # The linked list owns this tail
-        self.head = new_node
+        if self.head is None: # check if head is None
+            self.head = new_node 
+            self.tail = new_node 
+        else: # otherwise
+            new_node.next = self.head
+            self.head = new_node  # The linked list owns this head
+        self.size += 1
 
     def find(self, quality):
         """Return an item from this linked list satisfying the given quality.
